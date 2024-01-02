@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// // resources/sass/app.scss
+
+// @import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.card-header {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Inisialisasi elemen dengan opacity 0 */
+    animation: fadeIn 0.5s ease-out forwards; /* Animasi fadeIn selama 0.5 detik dengan efek ease-out */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Setelah animasi selesai, atur opacity ke 1 */
+    }
+}
